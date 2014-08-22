@@ -80,6 +80,21 @@ module.exports = function(grunt) {
         }
       }
     },
+    sass: {                                 // task
+        dist: {                             // target
+            files: {
+                'packages/system/public/assets/css/common.css' : 'packages/system/public/assets/scss/common.scss'
+            }
+        },
+        dev: {                              // another target
+            options: {                      // dictionary of render options
+                sourceMap: true
+            },
+            files: {
+                'packages/system/public/assets/css/common.css' : 'packages/system/public/assets/scss/common.scss'
+            }
+        }
+    },
     concurrent: {
       tasks: ['nodemon', 'watch'],
       options: {
