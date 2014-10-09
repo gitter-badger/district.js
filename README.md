@@ -1,7 +1,10 @@
-district.js...Join the District
+district.js...join the district
 ===========
 
-MEAN Based Bootstrap for Rapid Prototyping
+M.E.A.N. Based Bootstrap for Rapid Prototyping
+
+* Custom SASS mixins and mobile grid system
+* Lighweight and flexible
 
 ## License
 [The MIT License](http://opensource.org/licenses/MIT)
