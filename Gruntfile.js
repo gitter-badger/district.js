@@ -83,15 +83,17 @@ module.exports = function(grunt) {
     sass: {                                 // task
         dist: {                             // target
             files: {
-                'packages/system/public/assets/css/common.css' : 'packages/system/public/assets/scss/common.scss'
+                'packages/system/public/assets/css/common.css' : 'packages/system/public/assets/scss/common.scss',
+                'packages/system/public/assets/css/main.css' : 'packages/system/public/assets/scss/main.scss'                
             }
         },
         dev: {                              // another target
             options: {                      // dictionary of render options
-                sourceMap: true
+                sourceMap: false
             },
             files: {
-                'packages/system/public/assets/css/common.css' : 'packages/system/public/assets/scss/common.scss'
+                'packages/system/public/assets/css/common.css' : 'packages/system/public/assets/scss/common.scss',
+                'packages/system/public/assets/css/main.css' : 'packages/system/public/assets/scss/main.scss'                  
             }
         }
     },

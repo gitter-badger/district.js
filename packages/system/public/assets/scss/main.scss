@@ -1,60 +1,12 @@
-.page-header {
-	padding-bottom: 0;
-	margin: 0;
-	border-bottom: 0;
-}
-.page-header .navbar-nav {
-	float: right;
-}
-.page-header>div>div,
-.page-header>div>ul {
-	display: inline-block;
-}
-.text-edit {
-	padding: 13px 0 0 0;
-}
-.account {
-	text-align: right;
-}
-.account>div,
-.account>ul {
-	text-align: left;
-}
-.navbar .nav>li>a.brand {
-	padding-left: 20px;
-	margin-left: 0
-}
-.content {
-	margin-top: 70px;
-	width: 100%
-}
-footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	height: 30px;
-	width: 100%;
-	background: #ddd;
-	-webkit-box-shadow: 0 8px 6px 6px black;
-	-moz-box-shadow: 0 8px 6px 6px black;
-	box-shadow: 0 8px 6px 6px black
-}
-footer p {
-	padding: 5px 0 12px 10px
-}
-.ng-invalid.ng-dirty {
-	border-color: #FA787E;
-}
-.ng-valid.ng-dirty {
-	border-color: #78FA89;
-}
+
+// * -- [ IMPORT ] -- * //
 
 @import url('mixins.scss');
 
 // *** ------ [ MIXINS ] ------ *** //
 
 @mixin brand-font {
-  font-family: "helvetica neue", "arial"
+  font-family: "museo-sans-rounded", "helvetica neue", "arial"
 }
 
 @mixin trim {
@@ -605,7 +557,7 @@ body, html {
   font-size: 13.3px;
   font-weight: 300;
   line-height: 1.65em;
-/*  overflow: hidden;*/
+  overflow: hidden;
 }
 
 a {
@@ -620,7 +572,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "museo-sans-rounded", "helvetica neue", "arial";
   font-weight: 200;
   letter-spacing: -0.535;
-  /*  text-transform: uppercase;*/
+/*  text-transform: uppercase;*/
 }
 
 h1 {
@@ -752,7 +704,7 @@ a {
         &:hover {
           @include back-mid;
           @include color-carbon;
-          @include dark-text;
+          @include dark-text;       
         }
         cursor: pointer;
         width: 100%;
@@ -1014,5 +966,4 @@ a {
 .swipe-height {
   @include swipe-height
 }
-
 
